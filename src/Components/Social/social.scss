@@ -1,0 +1,36 @@
+@import "../../app.scss";
+
+.social{
+    position: fixed;
+    text-align: left;
+    gap: 70px;
+    bottom: 0;
+    display: inline;
+
+    @include mobile{
+        display: none;
+    }
+    .icon{
+        
+        li{
+            list-style-type: none;
+            img{
+                height: 20px;
+                width: 20px;
+                margin-top: 20px;
+                cursor: pointer;
+                transition: all .5s linear;
+            }
+            img:hover{
+                transform: scale(1.6);
+            }
+        }
+        .vr{
+            
+            height: 100px;
+            border-left: 2px solid #8892b0;
+            margin: 0 10px;
+            margin-top: 30px;
+        }
+    }
+}
